@@ -38,29 +38,7 @@ DOCTYPE html>
     </div>
 
     <script>
-        const SECRET_PW = "Mick1978";
-
-        // 1. Manual Login Function
-        function checkPass() {
-            const input = document.getElementById('pass-input').value;
-            if(input === SECRET_PW) {
-                showContent();
-            } else {
-                alert("Incorrect Password");
-            }
-        }
-
-        // 2. AUTO-UNLOCK (For the Ring)
-        // If the URL is yoursite.com/?ring=true, it unlocks automatically
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('ring') === 'true') {
-            showContent();
-        }
-
-        function showContent() {
-            document.getElementById('login-screen').classList.add('hidden');
-            document.getElementById('private-content').classList.remove('hidden');
-        }
+        
     </script>
 </body>
 </html>
