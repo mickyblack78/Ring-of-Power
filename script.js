@@ -1,5 +1,4 @@
-const SECRET_PW = "YOUR_PASSWORD"; // Change this to your actual password
-
+const SECRET_PW = "Mick1978"
 function checkPass() {
     const input = document.getElementById('pass-input').value;
     if (input === SECRET_PW) {
