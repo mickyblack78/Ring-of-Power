@@ -14,8 +14,7 @@ function showContent() {
     
     // Reveal the private content
     const privateContent = document.getElementById('private-content');
-    privateContent.classList.remove('hidden');
-
+    
     // Play the video sound and music simultaneously
     const video = document.getElementById('myVideo');
     const music = document.getElementById('bgMusic');
