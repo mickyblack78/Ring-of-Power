@@ -26,4 +26,12 @@ function showContent() {
         music.play();
     }
 }
+const dockItems = document.querySelectorAll('.dock-item');
+dockItems.forEach(item => {
+  item.addEventListener('click', () => {
+    if (navigator.vibrate) {
+      navigator.vibrate(20);
+    }
+  });
+});
 
