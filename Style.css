@@ -29,8 +29,6 @@
   border: none;
   font-size: 24px;
 }
-
-}.dock-item:active {
   filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.9));
   transform: scale(0.9);
   transition: 0.05s;
