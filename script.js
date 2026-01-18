@@ -33,5 +33,5 @@ dockItems.forEach(item => {
       navigator.vibrate(20);
     }
   });
-});
+
 
