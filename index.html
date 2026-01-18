@@ -19,6 +19,15 @@ DOCTYPE html>
         </p>
     </div>
     </div>
+    <canvas id="drawCanvas" style="position:fixed; top:0; left:0; z-index:999; touch-action:none;"></canvas>
+
+<div style="position:fixed; top:10px; left:10px; z-index:1000; background:rgba(0,0,0,0.7); padding:10px; border-radius:10px;">
+    <button onclick="setColor('black')" style="background:black; color:white;">Black</button>
+    <button onclick="setColor('red')" style="background:red; color:white;">Red</button>
+    <button onclick="setColor('orange')" style="background:orange;">Orange</button>
+    <input type="range" id="thick" min="1" max="10" value="3" oninput="setThick(this.value)">
+    <button onclick="clearCanvas()" style="background:white;">Clear</button>
+</div>
     
         
 <body>
