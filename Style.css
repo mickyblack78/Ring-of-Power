@@ -50,4 +50,9 @@
 .panel.active {
   bottom: 0;
 }
+.panel.active {
+  bottom: 0;
+}
 
+.panel-close {
+  
