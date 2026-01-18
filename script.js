@@ -1,6 +1,7 @@
 const SECRET_PW = "Mick1978"
 function checkPass() {
     const input = document.getElementById('pass-input').value;
+    
     if (input === SECRET_PW) {
         showContent();
     } else {
