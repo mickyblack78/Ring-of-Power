@@ -32,8 +32,7 @@ dockItems.forEach(item => {
     if (navigator.vibrate) {
       navigator.vibrate(20);
     }
-  });
-    const profileBtn = document.querySelector('.dock-item:last-child');
+  }
 const panel = document.getElementById('side-panel');
 
 profileBtn.addEventListener('click', () => {
