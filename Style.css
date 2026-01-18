@@ -5,22 +5,7 @@
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-  .mobile-dock {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  height: 65px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 30px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 9999;
+  
   }
   
   object-fit: cover; /* This ensures the video doesn't look "squished" */
