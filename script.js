@@ -10,7 +10,6 @@ function checkPass() {
 }
 
 function showContent() {
-    // Hide the login screen
     document.getElementById('login-screen').style.display = 'none';
     
     // Reveal the private content
