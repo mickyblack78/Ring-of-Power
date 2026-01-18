@@ -17,7 +17,6 @@ function showContent() {
     privateContent.style.display = 'block';
     
     
-    // Play the video sound and music simultaneously
     const video = document.getElementById('myVideo');
     const music = document.getElementById('bgMusic');
     
