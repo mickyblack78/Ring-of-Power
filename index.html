@@ -10,7 +10,7 @@ DOCTYPE html>
     
 </head>
     <div id="security-overlay">
-    <div id="warning-text">
+    <div id="wnoarning-text">
         <h1 class="bold-red">ACCESS STRICTLY PROHIBITED</h1>
         <p class="small-white">
             Unauthorized Access is logged and added to 
@@ -18,7 +18,24 @@ DOCTYPE html>
         </p>
     </div>
     </div>
-    
+    /* ADD INSIDE <style> IN THE <head> */
+.mobile-dock {
+  position: fixed;
+  bottom: 20px; /* Floats it off the bottom edge */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.1); /* Translucent */
+  backdrop-filter: blur(20px); /* The Glass Effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+}
+        
 <body>
     <video autoplay muted loop id="myVideo">
   <source src="shopping.mp4" type="video/mp4">
