@@ -21,7 +21,7 @@ function showContent() {
     const music = document.getElementById('bgMusic');
     
     video.muted = false;
-    video.play();
+video.play().catch(error => console.log("Playback failed:", error));
     if (music) {
         music.play();
     }
