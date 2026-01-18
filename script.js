@@ -48,3 +48,24 @@ dockItems.forEach(item => {
         }
     });
 });
+const canvas = document.getElementById('drawCanvas');
+const ctx = canvas.getContext('2d');
+let drawing = false;
+
+// Auto-size canvas to your phone screen
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+ctx.strokeStyle = 'black'; // Default color
+ctx.lineWidth = 3;         // Default thickness
+ctx.lineCap = 'round';
+
+function setColor(c) { ctx.strokeStyle = c; }
+function setThick(t) { ctx.lineWidth = t; }
+function clearCanvas() { ctx.clearRect(0, 0, canvas.width, canvas.height); }
+
+// Touch controls for your G35
+canvas.addEventListener('pointerdown', (e) => { drawing = true; ctx.beginPath(); ctx.moveTo(e.clientX, e.clientY); });
+canvas.addEventListener('pointermove', (e) => { if(drawing) { ctx.lineTo(e.clientX, e.clientY); ctx.stroke(); } });
+canvas.addEventListener('pointerup', () => { drawing = false; });
+
