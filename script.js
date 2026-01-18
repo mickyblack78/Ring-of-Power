@@ -33,5 +33,16 @@ dockItems.forEach(item => {
       navigator.vibrate(20);
     }
   });
+    const profileBtn = document.querySelector('.dock-item:last-child');
+const panel = document.getElementById('side-panel');
+
+profileBtn.addEventListener('click', () => {
+  panel.classList.toggle('active');
+});
+
+document.querySelector('.panel-close').addEventListener('click', () => {
+  panel.classList.remove('active');
+});
+    
 
 
